@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
      EditText t1,t2,t3;
 
@@ -27,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
     public void click(View view) {
         float a=Float.valueOf(t2.getText().toString());
         float b=Float.valueOf(t1.getText().toString());
+        int aa= Integer.valueOf(t2.getText().toString());
+        int bb=Integer.valueOf(t1.getText().toString());
 
-        t3.setText(a+b+"");
+        t3.setText(aa+bb+"");
     }
 }
