@@ -25,6 +25,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click(View view) {
-        t3.setText((t2.getText().toString()+t1.getText().toString()));
+        t3.setText((t2.getText().toString()+" "+t1.getText().toString()));
     }
 }
