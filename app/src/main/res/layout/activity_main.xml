@@ -52,25 +52,80 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-
         android:layout_marginTop="80dp">
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/rg"
+           android:orientation="horizontal"
+           >
+           <RadioButton
+               style="@string/rd"
+               android:text="+"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:checked="true"
+               android:layout_marginRight="19dp"
+               android:id="@+id/r1"/>
+           <RadioButton
+               style="@string/rd"
+               android:text="-"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:layout_marginRight="19dp"
+               android:id="@+id/r2"/>
+           <RadioButton
+               style="@string/rd"
+               android:text="*"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:layout_marginRight="19dp"
+               android:id="@+id/r3"/>
+           <RadioButton
+               style="@string/rd"
+               android:text="/"
+               android:textSize="24dp"
+               android:textStyle="bold"
+               android:layout_marginRight="19dp"
+               android:id="@+id/r4"/>
+
+       </RadioGroup>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="130dp">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:text="Click"
+            android:text="Calcule"
             android:textSize="24dp"
             android:background="#DD86EC"
             android:textColor="#000"
             android:id="@+id/b1"
             android:onClick="click"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vide"
+            android:textSize="24dp"
+            android:background="#DD86EC"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:id="@+id/b2"
+            android:onClick="vide"/>
 
         <EditText
-            android:layout_width="199dp"
+            android:layout_width="130dp"
             android:layout_height="40dp"
             android:background="#F8AD96"
             android:textSize="24dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:id="@+id/t3"/>
 
 

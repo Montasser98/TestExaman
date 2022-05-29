@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestExaman</string>
+    <string name="rd">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+    </string>
 </resources>
